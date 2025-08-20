@@ -1,6 +1,6 @@
 Juan Sebastian Gonzalez Alvarez
 
-# ¿Qué hace el programa?
+# ¿Que hace el programa?
 
 Este programa implementa un simulador de AFD (Automata Finito Determinista).
 Lee un archivo de configuración donde se definen los estados.
@@ -8,7 +8,7 @@ Lee un archivo de configuración donde se definen los estados.
 Luego lee otro archivo con cadenas de prueba.
 Procesa cada cadena con el autómata y dice si es acepta o NO acepta.
 
-# Diseño del autómata (AFD)
+# Diseño del automata (AFD)
 
 Estados: q0, q1, q2
 Alfabeto: 0, 1
@@ -29,7 +29,7 @@ Estados de aceptacion: q2
 
 # ¿Como funciona el codigo?
 - Empieza en el estado inicial.
-- Lee cada símbolo de la cadena:
-- Si existe una transición (estado, simbolo) → cambia de estado.
+- Lee cada simbolo de la cadena:
+- Si existe una transicion (estado, simbolo) → cambia de estado.
 - Si no existe → rechaza.
 - Al final: acepta si termino en un estado final.
