@@ -28,8 +28,8 @@ Estados de aceptacion: q2
   - con 1 → q0
 
 # ¿Como funciona el codigo?
-Empieza en el estado inicial.
-Lee cada símbolo de la cadena:
-Si existe una transición (estado, simbolo) → cambia de estado.
-Si no existe → rechaza.
-Al final: acepta si termino en un estado final.
+- Empieza en el estado inicial.
+- Lee cada símbolo de la cadena:
+- Si existe una transición (estado, simbolo) → cambia de estado.
+- Si no existe → rechaza.
+- Al final: acepta si termino en un estado final.
