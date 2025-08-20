@@ -11,14 +11,14 @@ def leer_conf(archivo):
     inicial = lineas[2].split(":")[1].strip()
     finales = [f.strip() for f in lineas[3].split(":")[1].split(",")]
     
-    # A partir de la línea 5 vienen las transiciones
+    # A partir de la linea 5 vienen las transiciones
     transiciones = {}
     for linea in lineas[5:]:
         izquierda, derecha = linea.split("=")
         estado, simbolo = [x.strip() for x in izquierda.split(",")]
         transiciones[(estado, simbolo)] = derecha.strip()
     
-    # retorna toda la configuración
+    # retorna toda la configuracion
     return estados, alfabeto, inicial, finales, transiciones
 
 # Simula el AFD sobre una cadena de entrada
@@ -36,7 +36,7 @@ def main():
     conf_file = sys.argv[1]
     cadenas_file = sys.argv[2]
 
-    # Leer configuración del AFD    
+    # Leer configuracion del AFD    
     estados, alfabeto, inicial, finales, transiciones = leer_conf(conf_file)
     
     with open(cadenas_file, "r") as f:
